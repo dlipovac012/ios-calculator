@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,58 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="JJy-Ki-hC1">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iaO-iR-YsA" userLabel="CalculationResult">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="135.5"/>
+                                        <color key="backgroundColor" red="0.33333333333333331" green="0.3529411764705882" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Dj-kH-qS8" userLabel="Controls">
+                                        <rect key="frame" x="0.0" y="136.5" width="414" height="681.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="4LA-kt-WEA">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="681.5"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HTd-aZ-DY7">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="681.5"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.33333333333333331" green="0.3529411764705882" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="4LA-kt-WEA" secondAttribute="bottom" id="01k-Dr-ci3"/>
+                                            <constraint firstItem="4LA-kt-WEA" firstAttribute="top" secondItem="0Dj-kH-qS8" secondAttribute="top" id="GT5-fd-21T"/>
+                                            <constraint firstItem="4LA-kt-WEA" firstAttribute="leading" secondItem="0Dj-kH-qS8" secondAttribute="leading" id="SB7-nv-Yud"/>
+                                            <constraint firstAttribute="trailing" secondItem="4LA-kt-WEA" secondAttribute="trailing" id="W7U-0i-Pi7"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="0Dj-kH-qS8" firstAttribute="top" secondItem="JJy-Ki-hC1" secondAttribute="bottom" multiplier="1:6" id="XYO-Go-Xnr"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20392156862745098" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="JJy-Ki-hC1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="C80-HD-fnm"/>
+                            <constraint firstItem="JJy-Ki-hC1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="RGz-wi-0hA"/>
+                            <constraint firstAttribute="trailing" secondItem="JJy-Ki-hC1" secondAttribute="trailing" id="hpd-A8-1oj"/>
+                            <constraint firstItem="JJy-Ki-hC1" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="y8D-ec-zFD"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="137.94642857142856"/>
         </scene>
     </scenes>
 </document>
