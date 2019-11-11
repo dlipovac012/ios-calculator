@@ -28,8 +28,24 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="4LA-kt-WEA">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="681.5"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HTd-aZ-DY7">
-                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="681.5"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yUM-Dc-CIr">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="135.5"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cEq-k3-Nb6">
+                                                        <rect key="frame" x="0.0" y="136.5" width="414" height="135.5"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zSB-a6-aRX">
+                                                        <rect key="frame" x="0.0" y="273" width="414" height="135.5"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bT5-28-3wW">
+                                                        <rect key="frame" x="0.0" y="409.5" width="414" height="135.5"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lUa-sX-FVD">
+                                                        <rect key="frame" x="0.0" y="546" width="414" height="135.5"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                     </view>
                                                 </subviews>
@@ -51,9 +67,9 @@
                         </subviews>
                         <color key="backgroundColor" red="0.20392156862745098" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="JJy-Ki-hC1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="C80-HD-fnm"/>
-                            <constraint firstItem="JJy-Ki-hC1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="RGz-wi-0hA"/>
-                            <constraint firstAttribute="trailing" secondItem="JJy-Ki-hC1" secondAttribute="trailing" id="hpd-A8-1oj"/>
+                            <constraint firstItem="JJy-Ki-hC1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="PU6-rv-oqp"/>
+                            <constraint firstItem="JJy-Ki-hC1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="RGz-wi-0hA"/>
+                            <constraint firstItem="JJy-Ki-hC1" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hpd-A8-1oj"/>
                             <constraint firstItem="JJy-Ki-hC1" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="y8D-ec-zFD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
